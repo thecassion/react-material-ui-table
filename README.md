@@ -15,12 +15,12 @@ npm install --save react-material-ui-table
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-material-ui-table'
+import {Table} from 'react-material-ui-table'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Table />
     )
   }
 }
