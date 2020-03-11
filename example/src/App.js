@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import {Table} from 'react-material-ui-table'
+import {Table} from 'react-materialui-table'
 
 export default class App extends Component {
   render () {

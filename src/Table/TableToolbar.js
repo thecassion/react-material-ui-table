@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { lighten, makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import tableToolbarStyle from './../../assets/jss/components/tableToolbarStyle';
+import tableToolbarStyle from './../styles/components/tableToolbarStyle';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { TextField } from '@material-ui/core';

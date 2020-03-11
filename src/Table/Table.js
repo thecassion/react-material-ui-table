@@ -10,7 +10,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import EnhancedTableHead from './TableHead';
 import EnhancedTableToolbar from './TableToolbar';
 import TablePagination from '@material-ui/core/TablePagination';
-import tableStyle from './../../assets/jss/components/tableStyle';
+import tableStyle from './../styles/components/tableStyle';
 
 const useStyles = makeStyles(() => (tableStyle));
 
