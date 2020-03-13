@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save react-material-ui-table
+npm install --save @thecassion/react-material-ui-table
 ```
 
 ## Usage
@@ -15,9 +15,9 @@ npm install --save react-material-ui-table
 ```jsx
 import React, { Component } from 'react'
 
-import {Table} from 'react-material-ui-table'
+import {Table} from '@thecassion/react-material-ui-table'
 
-class Example extends Component {
+function Example extends {
   render () {
     return (
       <Table />
