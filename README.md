@@ -20,7 +20,7 @@ import {Table} from '@thecassion/react-material-ui-table'
 function Example extends {
   render () {
     return (
-      <Table />
+      <Table data={[]} />
     )
   }
 }

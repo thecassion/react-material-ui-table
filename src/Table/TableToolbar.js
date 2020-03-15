@@ -62,7 +62,7 @@ const RESPONSIVE_FULL_WIDTH_NAME = 'scrollFullHeightFullWidth';
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                   >
-                    {options.selectedMenu.map((menu)=>(<MenuItem  >{menu}</MenuItem>)
+                    {options.selectedMenu.map((menu)=>(<MenuItem onClick={handleClose}  >{menu}</MenuItem>)
                     )}
                   </Menu>
                 }
