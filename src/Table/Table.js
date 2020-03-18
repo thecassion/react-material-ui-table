@@ -63,8 +63,17 @@ function MyTable(props) {
     }
   }
 
+  const initializeSelected=(s)=>{
+      if(props.options){
+        if(props.options.initializeSelected){
+            props.options.initializeSelected(s);
+          }
+      }
+  }
+
   React.useEffect(()=>{
     getSelectedRows(selected);
+    initializeSelected(setSelected);
   })
 
   function handleChangePage(event, newPage) {
