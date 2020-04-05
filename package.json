@@ -1,6 +1,6 @@
 {
   "name": "@thecassion/react-material-ui-table",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A library that helps create material-ui table /serverside easily",
   "author": "thecassion",
   "license": "MIT",
