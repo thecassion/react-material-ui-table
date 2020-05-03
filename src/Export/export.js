@@ -13,7 +13,8 @@ const Exporter=(props)=>{
     return (
       <ExcelFile element={<Tooltip title={props.title}>
       <IconButton aria-label="Export list"
-      classeName={{ root: classes.icon }}>
+      //classeName={{ root: classes.icon }}
+      >
         <CloudDownloadIcon />
       </IconButton>
     </Tooltip>}>
@@ -29,7 +30,7 @@ const Exporter=(props)=>{
   Exporter.propTypes = {
     data: PropTypes.array,
     title: PropTypes.string,
-    sheetName: PropTypes.name
+    sheetName: PropTypes.string
   };
 
   export default Exporter;

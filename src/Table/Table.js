@@ -127,23 +127,11 @@ function MyTable(props) {
             {props.children}
               {
               props.headRows.map((col,myIndex)=>{
-                  if(col.id==='name'){
-                    if(col.to!=null){
-                      return <TableCell alignCenter key={myIndex+"-"+row["id"]}><Link to={ col.to.link + row[col.to.rowName] } >{row[col.id]}</Link> </TableCell>
-                    }
-                  }
-                  else if(col.id==='status'){
-                    return(
-                    <TableCell alignCenter key={myIndex+"-"+row["id"]}>
-                    </TableCell>)
-                  }
-                  else {
                     if(col.to!=null){
                       return <TableCell alignCenter key={myIndex+"-"+row["id"]}><Link to={ col.to.link + row[col.to.rowName] } >{row[col.id]}</Link> </TableCell>
                     }else{
                       return <TableCell alignCenter key={myIndex+"-"+row["id"]}>{row[col.id]}</TableCell>
                     }
-                  }
               })
             }
             </TableRow>)
