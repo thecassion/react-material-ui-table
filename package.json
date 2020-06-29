@@ -1,6 +1,6 @@
 {
   "name": "@thecassion/react-material-ui-table",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "A library that helps create material-ui table /serverside easily",
   "author": "thecassion",
   "license": "MIT",
@@ -28,8 +28,7 @@
     "@material-ui/core": "^4.9.1",
     "@material-ui/icons": "^4.9.1",
     "clsx": "^1.1.0",
-    "react-router-dom": "^5.0.1",
-    "react-data-export": "^0.6.0"
+    "react-router-dom": "^5.0.1"
   },
   "devDependencies": {
     "@svgr/rollup": "^2.4.1",
@@ -59,7 +58,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^3.1.2",
     "rollup-plugin-url": "^1.4.0",
-    "react-data-export": "^0.6.0"
   },
   "files": [
     "dist"
