@@ -101,6 +101,7 @@ function MyTable(props) {
               onRequestSort={handleRequestSort}
               rowCount={props.data?props.data.length:0}
               headRows={props.headRows}
+              filter={props.filter}
             />
         <TableBody>
           {(props.data?props.data:[]).map((row,index) => {

@@ -5,6 +5,7 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import TableRow from '@material-ui/core/TableRow';
 import PropTypes from 'prop-types';
 import Checkbox from '@material-ui/core/Checkbox';
+import Filter from './Filter';
 
 export default function EnhancedTableHead(props) {
     const { onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort, headRows } = props;
@@ -40,6 +41,7 @@ export default function EnhancedTableHead(props) {
             </TableCell>
           ))}
         </TableRow>
+        <Filter filter={props.filter}/>
       </TableHead>
     );
   }
