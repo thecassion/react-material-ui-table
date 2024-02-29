@@ -1,4 +1,3 @@
-import { lighten } from '@material-ui/core/styles';
 const tableToolbarStyle = theme => (
     {
         root: {
@@ -9,7 +8,7 @@ const tableToolbarStyle = theme => (
           theme.palette.type === 'light'
             ? {
                 color: theme.palette.secondary.main,
-                backgroundColor: lighten(theme.palette.secondary.light, 0.85),
+                backgroundColor: theme.palette.secondary.light,
               }
             : {
                 color: theme.palette.text.primary,

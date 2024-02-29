@@ -9,7 +9,7 @@
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
     "react-scripts": "^5.0.1",
-    "react-materialui-table": "link:.."
+    "@thecassion/react-material-ui-table": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

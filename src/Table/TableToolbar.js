@@ -3,10 +3,10 @@ import clsx from 'clsx';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
-import MenuOutlinedIcon from '@mui/icons/MoreVert'
-import FilterListIcon from '@material-ui/icons/FilterList';
+import MenuOutlinedIcon from '@mui/icons-material/MoreVert'
+import FilterListIcon from '@mui/icons-material/FilterList';
 import IconButton from '@mui/material/IconButton';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import tableToolbarStyle from './../styles/components/tableToolbarStyle';
