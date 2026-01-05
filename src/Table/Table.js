@@ -1,22 +1,18 @@
 import React from 'react';
-import { makeStyles } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
 import { Link} from "react-router-dom";
 import Checkbox from '@mui/material/Checkbox';
 import EnhancedTableHead from './TableHead';
 import EnhancedTableToolbar from './TableToolbar';
 import TablePagination from '@mui/material/TablePagination';
-import tableStyle from './../styles/components/tableStyle';
-
-const useStyles = makeStyles(() => (tableStyle));
 
 
 function MyTable(props) {
-  const classes = useStyles();
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('calories');
   const [selected, setSelected] = React.useState([]);
@@ -88,11 +84,18 @@ function MyTable(props) {
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, (props.data?props.data.length:0) - page * rowsPerPage);
 
   return (
-    <Paper className={classes.root}>
+    <Paper sx={{ 
+      width: '100%',
+      mt: 3,
+      overflowX: 'auto'
+    }}>
       <EnhancedTableToolbar options={props.options} numSelected={selected.length} label="" />
-      <div className={classes.tableWrapper}>
+      <Box sx={{ overflowX: 'auto' }}>
       {(props.loading!==0) &&
-      <Table className={classes.table} >
+      <Table sx={{ 
+        minWidth: 650,
+        overflowX: 'auto'
+      }} >
       <EnhancedTableHead
               numSelected={selected.length}
               order={order}
@@ -140,21 +143,15 @@ function MyTable(props) {
         </TableBody>
       </Table>
         }
-      </div>
+      </Box>
       <TablePagination
           rowsPerPageOptions={[5, 10, 25]}
           component="div"
           count={props.count}
           rowsPerPage={props.limit}
           page={props.page}
-          backIconButtonProps={{
-            'aria-label': 'Previous Page',
-          }}
-          nextIconButtonProps={{
-            'aria-label': 'Next Page',
-          }}
-          onChangePage={props.onChangePage}
-          onChangeRowsPerPage={props.onChangeRowsPerPage}
+          onPageChange={props.onChangePage}
+          onRowsPerPageChange={props.onChangeRowsPerPage}
         />
     </Paper>
 
