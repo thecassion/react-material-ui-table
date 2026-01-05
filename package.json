@@ -28,8 +28,8 @@
     "@mui/styled-engine-sc": "^6.3.0",
     "clsx": "^2.1.1",
     "prop-types": "^15.8.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
@@ -55,8 +55,8 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-standard": "^4.1.0",
     "gh-pages": "^6.2.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-scripts": "^5.0.1",
     "rollup": "^4.28.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
