@@ -1,0 +1,32 @@
+# Source files
+src/
+example/
+rollup.config.mjs
+.babelrc
+
+# Development files
+.eslintrc.json
+.eslintrc
+.prettierrc
+.editorconfig
+
+# Tests
+*.test.js
+*.spec.js
+__tests__/
+
+# Build files
+node_modules/
+.cache/
+.DS_Store
+
+# Git
+.git/
+.gitignore
+.github/
+
+# Misc
+*.log
+.env
+.env.local
+coverage/

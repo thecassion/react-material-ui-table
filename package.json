@@ -7,10 +7,16 @@
   "repository": "thecassion/react-material-ui-table",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.js"
+    }
+  },
   "engines": {
-    "node": ">=8",
-    "npm": ">=5"
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "scripts": {
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
@@ -46,14 +52,9 @@
     "@rollup/plugin-url": "^8.0.2",
     "@svgr/rollup": "^8.1.0",
     "cross-env": "^7.0.3",
-    "eslint": "^9.17.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-config-standard-react": "^13.0.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^7.2.1",
+    "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-standard": "^4.1.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "gh-pages": "^6.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
